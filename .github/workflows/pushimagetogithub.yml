@@ -27,7 +27,7 @@ jobs:
 
     - name: Build and push Docker image
       env:
-        DOCKERHUB_REPOSITORY: your-dockerhub-username/hello-world
+        DOCKERHUB_REPOSITORY: your-dockerhub-priyank24/hello-world
         IMAGE_TAG: ${{ github.sha }}
       run: |
         docker buildx build --platform linux/amd64 -t $DOCKERHUB_REPOSITORY:$IMAGE_TAG .
